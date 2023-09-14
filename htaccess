@@ -1,0 +1,6 @@
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://example.jp/$1 [R=301,L]
+
+DirectoryIndex index.php index.html
